@@ -5,6 +5,6 @@ propel:
                 adapter: pgsql
                 dsn: pgsql:host=sql.homelab.com;port=5432;dbname=lsd
                 user: postgres
-                password: A1cdl33$3
+                password: qwerty1234
                 settings:
                     charset: utf8
