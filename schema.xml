@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<database name="default" defaultIdMethod="native" namespace="App" defaultPhpNamingMethod="underscore">
+  <table name="aluno" idMethod="native" phpName="Aluno" namespace="App">
+    <column name="codaluno" phpName="Codaluno" type="INTEGER" primaryKey="true" autoIncrement="true" required="true"/>
+    <column name="ra" phpName="Ra" type="INTEGER" required="true"/>
+    <column name="nome" phpName="Nome" type="VARCHAR" size="50" required="true"/>
+  </table>
+  <table name="professor" idMethod="native" phpName="Professor" namespace="App">
+    <column name="codprofessor" phpName="Codprofessor" type="INTEGER" primaryKey="true" autoIncrement="true" required="true"/>
+    <column name="nome" phpName="Nome" type="VARCHAR" size="50" required="true"/>
+  </table>
+  <table name="trabalho" idMethod="native" phpName="Trabalho" namespace="App">
+    <column name="codtrabalho" phpName="Codtrabalho" type="INTEGER" primaryKey="true" autoIncrement="true" required="true"/>
+    <column name="nome" phpName="Nome" type="VARCHAR" size="50" required="true"/>
+    <column name="codaluno" phpName="Codaluno" type="INTEGER" required="true"/>
+    <column name="codprofessor" phpName="Codprofessor" type="INTEGER" required="true"/>
+    <column name="url" phpName="Url" type="VARCHAR" size="200"/>
+    <foreign-key foreignTable="aluno" name="trabalho_codaluno_fkey">
+      <reference local="codaluno" foreign="codaluno"/>
+    </foreign-key>
+    <foreign-key foreignTable="professor" name="trabalho_codprofessor_fkey">
+      <reference local="codprofessor" foreign="codprofessor"/>
+    </foreign-key>
+  </table>
+  <table name="versao" idMethod="native" phpName="Versao" namespace="App">
+    <column name="codversao" phpName="Codversao" type="INTEGER" primaryKey="true" autoIncrement="true" required="true"/>
+    <column name="codtrabalho" phpName="Codtrabalho" type="INTEGER" required="true"/>
+    <column name="data" phpName="Data" type="DATE" required="true"/>
+    <column name="hora" phpName="Hora" type="TIME" required="true"/>
+    <column name="descricao" phpName="Descricao" type="LONGVARCHAR" required="true"/>
+    <foreign-key foreignTable="trabalho" name="versao_codtrabalho_fkey">
+      <reference local="codtrabalho" foreign="codtrabalho"/>
+    </foreign-key>
+  </table>
+</database>

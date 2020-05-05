@@ -1,0 +1,10 @@
+propel:
+    database:
+        connections:
+            default:
+                adapter: pgsql
+                dsn: pgsql:host=sql.homelab.com;port=5432;dbname=lsd
+                user: postgres
+                password: A1cdl33$3
+                settings:
+                    charset: utf8
