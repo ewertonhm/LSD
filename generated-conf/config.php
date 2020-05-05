@@ -6,7 +6,7 @@ $manager = new \Propel\Runtime\Connection\ConnectionManagerSingle();
 $manager->setConfiguration(array (
   'dsn' => 'pgsql:host=sql.homelab.com;port=5432;dbname=lsd',
   'user' => 'postgres',
-  'password' => 'A1cdl33$3',
+  'password' => 'qwerty1234',
   'settings' =>
   array (
     'charset' => 'utf8',
