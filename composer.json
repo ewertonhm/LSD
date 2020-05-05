@@ -1,0 +1,16 @@
+{
+  "name": "vendor_name/social",
+  "description": "description",
+  "minimum-stability": "stable",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "Ewerton",
+      "email": "email@example.com"
+    }
+  ],
+  "require": {
+    "twig/twig": "^3.0",
+    "propel/propel": "~2.0-dev"
+  }
+}
