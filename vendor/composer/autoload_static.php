@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInitdac9e5f4c5b4e3551630dff598468c89
+class ComposerStaticInit7e122ac82f3260413250439a5c9d0529
 {
     public static $files = array (
         '320cde22f66dd4f5d3fd621d3e88b98f' => __DIR__ . '/..' . '/symfony/polyfill-ctype/bootstrap.php',
@@ -22,6 +22,7 @@ class ComposerStaticInitdac9e5f4c5b4e3551630dff598468c89
             'Symfony\\Contracts\\Service\\' => 26,
             'Symfony\\Component\\Yaml\\' => 23,
             'Symfony\\Component\\Validator\\' => 28,
+            'Symfony\\Component\\Translation\\' => 30,
             'Symfony\\Component\\Finder\\' => 25,
             'Symfony\\Component\\Filesystem\\' => 29,
             'Symfony\\Component\\Console\\' => 26,
@@ -31,6 +32,14 @@ class ComposerStaticInitdac9e5f4c5b4e3551630dff598468c89
         array (
             'Psr\\Log\\' => 8,
             'Psr\\Container\\' => 14,
+        ),
+        'M' => 
+        array (
+            'Monolog\\' => 8,
+        ),
+        'C' => 
+        array (
+            'Carbon\\' => 7,
         ),
     );
 
@@ -63,6 +72,10 @@ class ComposerStaticInitdac9e5f4c5b4e3551630dff598468c89
         array (
             0 => __DIR__ . '/..' . '/symfony/validator',
         ),
+        'Symfony\\Component\\Translation\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/translation',
+        ),
         'Symfony\\Component\\Finder\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/finder',
@@ -87,6 +100,14 @@ class ComposerStaticInitdac9e5f4c5b4e3551630dff598468c89
         array (
             0 => __DIR__ . '/..' . '/psr/container/src',
         ),
+        'Monolog\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/monolog/monolog/src/Monolog',
+        ),
+        'Carbon\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon',
+        ),
     );
 
     public static $prefixesPsr0 = array (
@@ -106,10 +127,10 @@ class ComposerStaticInitdac9e5f4c5b4e3551630dff598468c89
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInitdac9e5f4c5b4e3551630dff598468c89::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInitdac9e5f4c5b4e3551630dff598468c89::$prefixDirsPsr4;
-            $loader->prefixesPsr0 = ComposerStaticInitdac9e5f4c5b4e3551630dff598468c89::$prefixesPsr0;
-            $loader->classMap = ComposerStaticInitdac9e5f4c5b4e3551630dff598468c89::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit7e122ac82f3260413250439a5c9d0529::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit7e122ac82f3260413250439a5c9d0529::$prefixDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInit7e122ac82f3260413250439a5c9d0529::$prefixesPsr0;
+            $loader->classMap = ComposerStaticInit7e122ac82f3260413250439a5c9d0529::$classMap;
 
         }, null, ClassLoader::class);
     }

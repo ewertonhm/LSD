@@ -9,10 +9,26 @@ DROP TABLE IF EXISTS "aluno" CASCADE;
 
 CREATE TABLE "aluno"
 (
-    "codaluno" serial NOT NULL,
-    "ra" INTEGER NOT NULL,
-    "nome" VARCHAR(50) NOT NULL,
-    PRIMARY KEY ("codaluno")
+    "id" serial NOT NULL,
+    "nome" VARCHAR(60),
+    "endereco" VARCHAR(120),
+    "telefone" VARCHAR(16),
+    "usuario_id" INTEGER,
+    "curso_id" INTEGER,
+    PRIMARY KEY ("id")
+);
+
+-----------------------------------------------------------------------
+-- curso
+-----------------------------------------------------------------------
+
+DROP TABLE IF EXISTS "curso" CASCADE;
+
+CREATE TABLE "curso"
+(
+    "id" serial NOT NULL,
+    "nome" VARCHAR(120),
+    PRIMARY KEY ("id")
 );
 
 -----------------------------------------------------------------------
@@ -23,9 +39,13 @@ DROP TABLE IF EXISTS "professor" CASCADE;
 
 CREATE TABLE "professor"
 (
-    "codprofessor" serial NOT NULL,
-    "nome" VARCHAR(50) NOT NULL,
-    PRIMARY KEY ("codprofessor")
+    "id" serial NOT NULL,
+    "nome" VARCHAR(60),
+    "endereco" VARCHAR(120),
+    "telefone" VARCHAR(16),
+    "usuario_id" INTEGER,
+    "curso_id" INTEGER,
+    PRIMARY KEY ("id")
 );
 
 -----------------------------------------------------------------------
@@ -36,40 +56,53 @@ DROP TABLE IF EXISTS "trabalho" CASCADE;
 
 CREATE TABLE "trabalho"
 (
-    "codtrabalho" serial NOT NULL,
-    "nome" VARCHAR(50) NOT NULL,
-    "codaluno" INTEGER NOT NULL,
-    "codprofessor" INTEGER NOT NULL,
-    "url" VARCHAR(200),
-    PRIMARY KEY ("codtrabalho")
+    "id" serial NOT NULL,
+    "data" DATE,
+    "caminho_arquivo" VARCHAR(255),
+    "comentario" VARCHAR(500),
+    "usuario_id" INTEGER,
+    "professor_id" INTEGER,
+    PRIMARY KEY ("id")
 );
 
 -----------------------------------------------------------------------
--- versao
+-- usuario
 -----------------------------------------------------------------------
 
-DROP TABLE IF EXISTS "versao" CASCADE;
+DROP TABLE IF EXISTS "usuario" CASCADE;
 
-CREATE TABLE "versao"
+CREATE TABLE "usuario"
 (
-    "codversao" serial NOT NULL,
-    "codtrabalho" INTEGER NOT NULL,
-    "data" DATE NOT NULL,
-    "hora" TIME NOT NULL,
-    "descricao" TEXT NOT NULL,
-    PRIMARY KEY ("codversao")
+    "id" serial NOT NULL,
+    "login" VARCHAR(45) NOT NULL,
+    "senha" VARCHAR(32) NOT NULL,
+    "email" VARCHAR(45) NOT NULL,
+    "admin" INTEGER,
+    PRIMARY KEY ("id")
 );
 
-ALTER TABLE "trabalho" ADD CONSTRAINT "trabalho_codaluno_fkey"
-    FOREIGN KEY ("codaluno")
-    REFERENCES "aluno" ("codaluno");
+ALTER TABLE "aluno" ADD CONSTRAINT "aluno_curso_id_fkey"
+    FOREIGN KEY ("curso_id")
+    REFERENCES "curso" ("id");
 
-ALTER TABLE "trabalho" ADD CONSTRAINT "trabalho_codprofessor_fkey"
-    FOREIGN KEY ("codprofessor")
-    REFERENCES "professor" ("codprofessor");
+ALTER TABLE "aluno" ADD CONSTRAINT "aluno_usuario_id_fkey"
+    FOREIGN KEY ("usuario_id")
+    REFERENCES "usuario" ("id");
 
-ALTER TABLE "versao" ADD CONSTRAINT "versao_codtrabalho_fkey"
-    FOREIGN KEY ("codtrabalho")
-    REFERENCES "trabalho" ("codtrabalho");
+ALTER TABLE "professor" ADD CONSTRAINT "professor_curso_id_fkey"
+    FOREIGN KEY ("curso_id")
+    REFERENCES "curso" ("id");
+
+ALTER TABLE "professor" ADD CONSTRAINT "professor_usuario_id_fkey"
+    FOREIGN KEY ("usuario_id")
+    REFERENCES "usuario" ("id");
+
+ALTER TABLE "trabalho" ADD CONSTRAINT "trabalho_professor_id_fkey"
+    FOREIGN KEY ("professor_id")
+    REFERENCES "professor" ("id");
+
+ALTER TABLE "trabalho" ADD CONSTRAINT "trabalho_usuario_id_fkey"
+    FOREIGN KEY ("usuario_id")
+    REFERENCES "usuario" ("id");
 
 COMMIT;

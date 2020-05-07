@@ -1,15 +1,11 @@
 {
-  "name": "vendor_name/social",
-  "description": "description",
-  "minimum-stability": "stable",
-  "license": "proprietary",
-  "authors": [
-    {
-      "name": "Ewerton",
-      "email": "email@example.com"
-    }
-  ],
+  "autoload": {
+    "classmap": ["classes/"]
+  },
   "require": {
-    "propel/propel": "~2.0-dev"
+    "ext-pdo": "*",
+    "propel/propel": "~2.0@dev",
+    "nesbot/carbon": "^2.24",
+    "monolog/monolog": "^2.0"
   }
 }

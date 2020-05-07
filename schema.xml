@@ -1,35 +1,56 @@
 <?xml version="1.0" encoding="utf-8"?>
-<database name="default" defaultIdMethod="native" namespace="App" defaultPhpNamingMethod="underscore">
-  <table name="aluno" idMethod="native" phpName="Aluno" namespace="App">
-    <column name="codaluno" phpName="Codaluno" type="INTEGER" primaryKey="true" autoIncrement="true" required="true"/>
-    <column name="ra" phpName="Ra" type="INTEGER" required="true"/>
-    <column name="nome" phpName="Nome" type="VARCHAR" size="50" required="true"/>
-  </table>
-  <table name="professor" idMethod="native" phpName="Professor" namespace="App">
-    <column name="codprofessor" phpName="Codprofessor" type="INTEGER" primaryKey="true" autoIncrement="true" required="true"/>
-    <column name="nome" phpName="Nome" type="VARCHAR" size="50" required="true"/>
-  </table>
-  <table name="trabalho" idMethod="native" phpName="Trabalho" namespace="App">
-    <column name="codtrabalho" phpName="Codtrabalho" type="INTEGER" primaryKey="true" autoIncrement="true" required="true"/>
-    <column name="nome" phpName="Nome" type="VARCHAR" size="50" required="true"/>
-    <column name="codaluno" phpName="Codaluno" type="INTEGER" required="true"/>
-    <column name="codprofessor" phpName="Codprofessor" type="INTEGER" required="true"/>
-    <column name="url" phpName="Url" type="VARCHAR" size="200"/>
-    <foreign-key foreignTable="aluno" name="trabalho_codaluno_fkey">
-      <reference local="codaluno" foreign="codaluno"/>
+<database name="default" defaultIdMethod="native" defaultPhpNamingMethod="underscore">
+  <table name="aluno" idMethod="native" phpName="Aluno">
+    <column name="id" phpName="Id" type="INTEGER" primaryKey="true" autoIncrement="true" required="true"/>
+    <column name="nome" phpName="Nome" type="VARCHAR" size="60"/>
+    <column name="endereco" phpName="Endereco" type="VARCHAR" size="120"/>
+    <column name="telefone" phpName="Telefone" type="VARCHAR" size="16"/>
+    <column name="usuario_id" phpName="UsuarioId" type="INTEGER"/>
+    <column name="curso_id" phpName="CursoId" type="INTEGER"/>
+    <foreign-key foreignTable="curso" name="aluno_curso_id_fkey">
+      <reference local="curso_id" foreign="id"/>
     </foreign-key>
-    <foreign-key foreignTable="professor" name="trabalho_codprofessor_fkey">
-      <reference local="codprofessor" foreign="codprofessor"/>
+    <foreign-key foreignTable="usuario" name="aluno_usuario_id_fkey">
+      <reference local="usuario_id" foreign="id"/>
     </foreign-key>
   </table>
-  <table name="versao" idMethod="native" phpName="Versao" namespace="App">
-    <column name="codversao" phpName="Codversao" type="INTEGER" primaryKey="true" autoIncrement="true" required="true"/>
-    <column name="codtrabalho" phpName="Codtrabalho" type="INTEGER" required="true"/>
-    <column name="data" phpName="Data" type="DATE" required="true"/>
-    <column name="hora" phpName="Hora" type="TIME" required="true"/>
-    <column name="descricao" phpName="Descricao" type="LONGVARCHAR" required="true"/>
-    <foreign-key foreignTable="trabalho" name="versao_codtrabalho_fkey">
-      <reference local="codtrabalho" foreign="codtrabalho"/>
+  <table name="curso" idMethod="native" phpName="Curso">
+    <column name="id" phpName="Id" type="INTEGER" primaryKey="true" autoIncrement="true" required="true"/>
+    <column name="nome" phpName="Nome" type="VARCHAR" size="120"/>
+  </table>
+  <table name="professor" idMethod="native" phpName="Professor">
+    <column name="id" phpName="Id" type="INTEGER" primaryKey="true" autoIncrement="true" required="true"/>
+    <column name="nome" phpName="Nome" type="VARCHAR" size="60"/>
+    <column name="endereco" phpName="Endereco" type="VARCHAR" size="120"/>
+    <column name="telefone" phpName="Telefone" type="VARCHAR" size="16"/>
+    <column name="usuario_id" phpName="UsuarioId" type="INTEGER"/>
+    <column name="curso_id" phpName="CursoId" type="INTEGER"/>
+    <foreign-key foreignTable="curso" name="professor_curso_id_fkey">
+      <reference local="curso_id" foreign="id"/>
     </foreign-key>
+    <foreign-key foreignTable="usuario" name="professor_usuario_id_fkey">
+      <reference local="usuario_id" foreign="id"/>
+    </foreign-key>
+  </table>
+  <table name="trabalho" idMethod="native" phpName="Trabalho">
+    <column name="id" phpName="Id" type="INTEGER" primaryKey="true" autoIncrement="true" required="true"/>
+    <column name="data" phpName="Data" type="DATE"/>
+    <column name="caminho_arquivo" phpName="CaminhoArquivo" type="VARCHAR" size="255"/>
+    <column name="comentario" phpName="Comentario" type="VARCHAR" size="500"/>
+    <column name="usuario_id" phpName="UsuarioId" type="INTEGER"/>
+    <column name="professor_id" phpName="ProfessorId" type="INTEGER"/>
+    <foreign-key foreignTable="professor" name="trabalho_professor_id_fkey">
+      <reference local="professor_id" foreign="id"/>
+    </foreign-key>
+    <foreign-key foreignTable="usuario" name="trabalho_usuario_id_fkey">
+      <reference local="usuario_id" foreign="id"/>
+    </foreign-key>
+  </table>
+  <table name="usuario" idMethod="native" phpName="Usuario">
+    <column name="id" phpName="Id" type="INTEGER" primaryKey="true" autoIncrement="true" required="true"/>
+    <column name="login" phpName="Login" type="VARCHAR" size="45" required="true"/>
+    <column name="senha" phpName="Senha" type="VARCHAR" size="32" required="true"/>
+    <column name="email" phpName="Email" type="VARCHAR" size="45" required="true"/>
+    <column name="admin" phpName="Admin" type="INTEGER"/>
   </table>
 </database>
