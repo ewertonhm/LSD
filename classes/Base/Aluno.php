@@ -106,6 +106,13 @@ abstract class Aluno implements ActiveRecordInterface
     protected $curso_id;
 
     /**
+     * The value for the versao field.
+     *
+     * @var        int
+     */
+    protected $versao;
+
+    /**
      * @var        ChildCurso
      */
     protected $aCurso;
@@ -409,6 +416,16 @@ abstract class Aluno implements ActiveRecordInterface
     }
 
     /**
+     * Get the [versao] column value.
+     *
+     * @return int
+     */
+    public function getVersao()
+    {
+        return $this->versao;
+    }
+
+    /**
      * Set the value of [id] column.
      *
      * @param int $v new value
@@ -537,6 +554,26 @@ abstract class Aluno implements ActiveRecordInterface
     } // setCursoId()
 
     /**
+     * Set the value of [versao] column.
+     *
+     * @param int $v new value
+     * @return $this|\Aluno The current object (for fluent API support)
+     */
+    public function setVersao($v)
+    {
+        if ($v !== null) {
+            $v = (int) $v;
+        }
+
+        if ($this->versao !== $v) {
+            $this->versao = $v;
+            $this->modifiedColumns[AlunoTableMap::COL_VERSAO] = true;
+        }
+
+        return $this;
+    } // setVersao()
+
+    /**
      * Indicates whether the columns in this object are only set to default values.
      *
      * This method can be used in conjunction with isModified() to indicate whether an object is both
@@ -589,6 +626,9 @@ abstract class Aluno implements ActiveRecordInterface
 
             $col = $row[TableMap::TYPE_NUM == $indexType ? 5 + $startcol : AlunoTableMap::translateFieldName('CursoId', TableMap::TYPE_PHPNAME, $indexType)];
             $this->curso_id = (null !== $col) ? (int) $col : null;
+
+            $col = $row[TableMap::TYPE_NUM == $indexType ? 6 + $startcol : AlunoTableMap::translateFieldName('Versao', TableMap::TYPE_PHPNAME, $indexType)];
+            $this->versao = (null !== $col) ? (int) $col : null;
             $this->resetModified();
 
             $this->setNew(false);
@@ -597,7 +637,7 @@ abstract class Aluno implements ActiveRecordInterface
                 $this->ensureConsistency();
             }
 
-            return $startcol + 6; // 6 = AlunoTableMap::NUM_HYDRATE_COLUMNS.
+            return $startcol + 7; // 7 = AlunoTableMap::NUM_HYDRATE_COLUMNS.
 
         } catch (Exception $e) {
             throw new PropelException(sprintf('Error populating %s object', '\\Aluno'), 0, $e);
@@ -852,6 +892,9 @@ abstract class Aluno implements ActiveRecordInterface
         if ($this->isColumnModified(AlunoTableMap::COL_CURSO_ID)) {
             $modifiedColumns[':p' . $index++]  = 'curso_id';
         }
+        if ($this->isColumnModified(AlunoTableMap::COL_VERSAO)) {
+            $modifiedColumns[':p' . $index++]  = 'versao';
+        }
 
         $sql = sprintf(
             'INSERT INTO aluno (%s) VALUES (%s)',
@@ -880,6 +923,9 @@ abstract class Aluno implements ActiveRecordInterface
                         break;
                     case 'curso_id':
                         $stmt->bindValue($identifier, $this->curso_id, PDO::PARAM_INT);
+                        break;
+                    case 'versao':
+                        $stmt->bindValue($identifier, $this->versao, PDO::PARAM_INT);
                         break;
                 }
             }
@@ -954,6 +1000,9 @@ abstract class Aluno implements ActiveRecordInterface
             case 5:
                 return $this->getCursoId();
                 break;
+            case 6:
+                return $this->getVersao();
+                break;
             default:
                 return null;
                 break;
@@ -990,6 +1039,7 @@ abstract class Aluno implements ActiveRecordInterface
             $keys[3] => $this->getTelefone(),
             $keys[4] => $this->getUsuarioId(),
             $keys[5] => $this->getCursoId(),
+            $keys[6] => $this->getVersao(),
         );
         $virtualColumns = $this->virtualColumns;
         foreach ($virtualColumns as $key => $virtualColumn) {
@@ -1079,6 +1129,9 @@ abstract class Aluno implements ActiveRecordInterface
             case 5:
                 $this->setCursoId($value);
                 break;
+            case 6:
+                $this->setVersao($value);
+                break;
         } // switch()
 
         return $this;
@@ -1122,6 +1175,9 @@ abstract class Aluno implements ActiveRecordInterface
         }
         if (array_key_exists($keys[5], $arr)) {
             $this->setCursoId($arr[$keys[5]]);
+        }
+        if (array_key_exists($keys[6], $arr)) {
+            $this->setVersao($arr[$keys[6]]);
         }
     }
 
@@ -1181,6 +1237,9 @@ abstract class Aluno implements ActiveRecordInterface
         }
         if ($this->isColumnModified(AlunoTableMap::COL_CURSO_ID)) {
             $criteria->add(AlunoTableMap::COL_CURSO_ID, $this->curso_id);
+        }
+        if ($this->isColumnModified(AlunoTableMap::COL_VERSAO)) {
+            $criteria->add(AlunoTableMap::COL_VERSAO, $this->versao);
         }
 
         return $criteria;
@@ -1273,6 +1332,7 @@ abstract class Aluno implements ActiveRecordInterface
         $copyObj->setTelefone($this->getTelefone());
         $copyObj->setUsuarioId($this->getUsuarioId());
         $copyObj->setCursoId($this->getCursoId());
+        $copyObj->setVersao($this->getVersao());
         if ($makeNew) {
             $copyObj->setNew(true);
             $copyObj->setId(NULL); // this is a auto-increment column, so set to default value
@@ -1422,6 +1482,7 @@ abstract class Aluno implements ActiveRecordInterface
         $this->telefone = null;
         $this->usuario_id = null;
         $this->curso_id = null;
+        $this->versao = null;
         $this->alreadyInSave = false;
         $this->clearAllReferences();
         $this->resetModified();

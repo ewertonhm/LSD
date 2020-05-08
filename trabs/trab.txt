@@ -1,0 +1,343 @@
+O que é segurança da informação?
+O nome é sugestivo: segurança da informação diz respeito ao conjunto de ações para proteção de um grupo de dados, protegendo o valor que ele possui, seja para um indivíduo específico no âmbito pessoal, seja para uma organização.
+
+Ela não está restrita a sistemas comunicacionais, se aplicando a todos os aspectos de proteção de dados. Mas este conteúdo irá focar nesse aspecto, para facilitar o trabalho da área TI.
+
+O que envolve a segurança da informação?
+A segurança da informação se baseia nos seguintes pilares:
+
+confidencialidade;
+integridade;
+disponibilidade;
+autenticidade.
+Ou seja, é necessário que as ações realizadas se dediquem a garantir esses quatro aspectos anteriores. E não é difícil compreender seu contexto na área de segurança.
+
+Por exemplo, um erro de confidencialidade pode expor dados estratégicos da organização para concorrentes, ou então um vazamento de dados de clientes realizado por hackers.
+
+Esse tipo de problema gera prejuízos financeiros e problemas com a imagem da corporação no mercado, evidenciando as falhas de segurança para o público.
+
+A integridade das informações também é essencial. Por exemplo, um erro no disco rígido pode corromper determinados arquivos importantes. Sem um backup, as funções da empresa podem ficar comprometidas.
+
+Disponibilidade é outro ponto essencial, já que os dados precisam estar acessíveis no momento em que foram requisitados, principalmente para garantir a agilidade dos processos.
+
+Isso pode ser impedido, por exemplo, por ataques de sequestro de dados (ransomware), que tem justamente a indisponibilidade como objetivo.
+
+Por fim, para garantir a segurança de dados, é fundamental garantir meios de autenticidade das informações preservadas. Há um grande risco de fraudes e isso pode causar problemas graves a longo prazo.
+
+Por exemplo, o uso de informações de cartões de crédito pode levar a clonagem dos dados. E isso é evidenciado para o público que perde a confiança na empresa.
+
+A pessoa saberá que foi uma falha de segurança gerada na organização que levou ao problema e deixará de ser cliente, bem como irá informar outros colegas sobre a situação.
+
+E, em tempos de redes sociais, uma informação pode ser propagada rapidamente, gerando uma imagem ruim da área de segurança da informação da empresa, manchando seu nome como profissional.
+
+Portanto, é imprescindível que as ações a serem implementadas na área de segurança priorizem sempre estes quatro pilares. Não perca eles de vista no seu dia a dia no trabalho.
+
+Qual é a importância da segurança da informação para as empresas?
+A segurança da informação é mais do que uma questão estratégica para a empresa: ela é uma das responsáveis pela possibilidade de funcionamento do negócio.
+
+Afinal, como sabemos, dados são poder. E, cada vez mais, no ambiente empresarial, eles são utilizados de forma estratégica para o funcionamento e crescimento da organização.
+
+Por exemplo, o uso de big data nas corporações é cada vez mais disseminado. Porém, ele só funciona adequadamente se os dados estiverem disponíveis e forem precisos.
+
+Se, por falhas tecnológicas, um servidor para de receber determinadas informações, a análise fica comprometida e, assim, pode-se gerar uma visão errada da situação atual.
+
+Além disso, toda empresa trabalha com informações estratégicas em seu funcionamento: análise de concorrência, prospecção da criação de novos produtos ou serviços, análise de mercado, entre outros.
+
+Muitos cibercriminosos, sabendo disso, tendem a realizar invasões a fim de obterem essas informações e vendê-las, a fim de fornecer vantagem competitiva. Portanto, é essencial se precaver.
+
+Outro ponto essencial é: os cibercrimes têm crescido exponencialmente. E não é só para vazamento de informações, mas também para sequestro de dados (como os ataques ransomware), ataques DDoS (que tornam as informações indisponíveis), entre outros.
+
+E o Brasil está na mira dos hackers: nós somos o segundo país no mundo com o maior número de crimes nessa área, atrás apenas da China, com um prejuízo de US$ 22 bilhões.
+
+Por isso, é importante ter consciência do cenário em que estamos imersos e a necessidade real de evitar qualquer tipo de prejuízo mais grave para a empresa em que trabalha.
+
+E isso só é possível por meio de um planejamento e implementação de medidas de segurança da informação que contemplem o negócio como um todo.
+
+Essas medidas evitam que os problemas ocorram e, caso a situação se concretize, você tenha planos de contingência a serem aplicados.
+
+
+O que é o Certificado Digital?
+
+
+A Certificação Digital é a tecnologia que, por meio da criptografia de dados, garante autenticidade, confidencialidade, integridade e não repúdio às informações eletrônicas. Trata-se de um documento digital utilizado para identificar pessoas e empresas no mundo virtual.
+
+Desde 2001, com a Medida Provisória nº 2.200-02, de 24 de agosto de 2001, ele já faz parte do dia a dia de pessoas e empresas. Mas muitos ainda não conhecem todas as utilidades e benefícios dessa tecnologia.
+
+A MP 2.200-2 é a norma responsável por regularizar e validar os contratos digitais no Brasil, além de distinguir a assinatura digital das outras ações eletrônicas. Em outras palavras, o Certificado Digital é a identidade digital que permite assinar documentos com validade jurídica. Esse documento deve ser gerado e assinado por uma Autoridade Certificadora (órgão responsável pela criação e gerenciamento dos Certificados Digitais) que esteja de acordo com as regras estabelecidas pela ICP-Brasil.
+
+Uma outra funcionalidade do Certificado é permitir que a empresa envie suas declarações de tributos e obrigações acessórias por meio eletrônico. Além disso, para evitar fraudes e deixar o processo mais seguro, o documento só pode ser feito presencialmente e com apresentação dos documentos originais do titular. Exceto em casos de renovação.
+
+A partir de 01 de Janeiro de 2016 somente os certificados de pessoa física podem ser renovado de forma online, limitada a uma ocorrência precedida por uma validação presencial para a emissão do Certificado Digital. Por exemplo, Validação Presencial, Renovação Online e assim por diante. Para o e-CNPJ a validação sempre será presencial.
+
+O Certificado Digital pode ser utilizado para a autenticação em sistemas e sites, enviar, acompanhar e retificar a declaração do imposto de renda, assinar documentos, entre muitas outras possibilidades. Ou seja, ele viabiliza a realização de procedimentos e operações virtuais sem a necessidade de deslocamento e burocracia no processo. Isso concede maior segurança, custo reduzido e confiabilidade.
+
+É importante destacar que o Certificado Digital não é uma invenção do governo. Ele foi criado com o objetivo de facilitar a rotina das pessoas físicas e empresas, promovendo agilidade, segurança e redução de custos.
+
+“Por garantir a identidade do titular no meio eletrônico, ou seja, por ser seguro, o certificado é amplamente requisitado para transações relacionadas ao governo. Mas a tecnologia é muito mais que um instrumento para cumprir obrigações”, explica Leonardo Gonçalves, diretor de relações institucionais da Certisign.
+
+Como é feita a segurança das informações?
+Em um contexto atual de fraudes, com relação às transações eletrônicas, é frequente a preocupação com a segurança das informações trocadas no ambiente virtual. Por isso, muitas pessoas não aproveitam as facilidades oferecidas pelo meio, mas quando se trata do Certificado Digital, essa preocupação pode ser descartada.
+
+Todo Certificado Digital tem uma Chave Pública ou Privada, isto é, um nome e um número exclusivo que garante segurança ao usuário. Essa chave compõe um sistema de criptografia assimétrica, onde os dados só conseguirão ser acessados se o receptor tiver a chave correta para decodificá-los.
+
+Essas duas chaves são geradas aleatoriamente por funções matemáticas e trabalham em conjunto. Tudo que uma assina, somente a outra é capaz de autenticar. Essas características trazem maior segurança ao documento.
+
+Outro aspecto importante é que, além da segurança fornecida pela própria ferramenta, o usuário deve utilizar senhas fortes que contribuem para aumentar a sua segurança. Ao emitir o certificado junto à autoridade certificadora, é recomendado criar uma senha segura, misturando letras maiúsculas, minúsculas, números, símbolos e ter, pelo menos, 8 dígitos.
+
+Quais são os benefícios do Certificado Digital?
+Além das diversas vantagens abordadas anteriormente, relacionamos os principais benefícios desse recurso. Confira!
+
+Ele é o RG do mundo digital
+O Certificado é um documento que identifica inquestionavelmente pessoas e empresas no meio eletrônico, por isso é considerado o RG do mundo digital. Por meio da criptografia de dados, garante a autenticidade e a integridade das transações realizadas.
+
+“Tudo o que for assinado ou transacionado via Certificado Digital tem validade jurídica, assegurada pela legislação. Vale, ainda, ressaltar que o documento só pode ser emitido por Autoridades Certificadoras credenciadas pelo Instituto Nacional de Tecnologia da Informação — ITI”, diz Gonçalves.
+
+Ele pode ser usado para assinar documentos
+Isso mesmo! Por conta do rigoroso processo de emissão e a tecnologia da criptografia de dados, o documento possibilita ao titular autorizar transações e até mesmo assinar documentos no meio eletrônico, com o mesmo valor de uma assinatura de punho autenticada – deixando de lado o uso de papel e caneta.
+
+Ele garante mobilidade
+Se ele identifica no meio eletrônico, logo proporciona mobilidade. Com o Certificado, por exemplo, é possível formalizar negócios a longa distância. Um empresário daqui do Brasil pode concretizar um negócio com outro empresário que estiver em viagem na China. Basta eles acessarem a plataforma para assinaturas de documentos, via celular, tablet ou computador, e assinar com o Certificado.
+
+Reduz os custos
+Por permitir que processos sejam realizados do início ao fim no meio eletrônico com o uso do Portal de Assinaturas Certisign, o Certificado Digital diminui gastos relacionados à compra, impressão e armazenamento de papel, ao transporte e à mão de obra porque melhora a eficiência operacional.
+
+Isso representa um grande indicador de sucesso, pois além de reduzir custos operacionais, também otimizará o tempo, permitindo que os colaboradores foquem as energias em tarefas que trazem mais resultados para a empresa.
+
+
+
+Proporciona agilidade e praticidade na execução de tarefas
+Com o Certificado Digital, o trabalho de assinar e gerir documentos é otimizado e concluído com maior rapidez e segurança. Assim, os negócios podem ser formalizados a qualquer hora e em qualquer lugar, gerando mobilidade aos usuários.
+
+Garante segurança jurídica na assinatura
+Todo documento assinado com Certificado Digital possui validade jurídica e a mesma confiança pública que um cartório garante. Isto é, em poucos cliques, qualquer arquivo eletrônico pode ser assinado com valor jurídico. E todo o processo, antes burocrático, fica simples e prático.
+
+
+Ouça a parte 2 da nossa matéria clicando no player:
+
+Ouça a última parte
+
+Quem precisa da certificação digital?
+De modo geral, todas pessoas (físicas ou jurídicas) que desejam realizar determinadas atividades na internet de maneira segura e autenticada.
+
+No entanto, para algumas pessoas ela se torna uma exigência. As organizações inscritas nos regimes tributários de lucro real ou lucro presumido e aquelas que emitem nota fiscal eletrônica (NF-e) são obrigadas a utilizar o Certificado Digital.
+
+Como utilizar o Certificado Digital?
+assinar e enviar documentos pela internet, por meio da Assinatura Digital;
+fazer transações bancárias;
+enviar as declarações da sua empresa, como ECF de pessoa jurídica;
+fazer login em ambientes seguros;
+assinar NF-e, escriturações contábeis e fiscais;
+acessar os serviços do CNES (Cadastro Nacional de Entidades Sindicais);
+fiscalizar e registrar os serviços de transporte de carga entre duas empresas;
+acessar o Portal da Receita Federal e-CAC;
+habilitar a e-CNH em seu celular;
+participar de leilões eletrônicos;
+criar procurações eletrônicas.
+Quais os tipos existentes?
+Existem diversos modelos e tipos de Certificados Digitais, sendo que cada um deles se aplica em um caso específico, dependendo das necessidades da empresa.
+
+
+
+Antes de adquiri-lo é preciso conhecer as principais diferenças entre eles e que tipo de demanda eles atendem, evitando, assim, obter um certificado de forma equivocada. A seguir, conheça os tipos existentes no mercado.
+
+Certificado Digital e-CPF
+O e-CPF é o a identidade digital de pessoas físicas no meio eletrônico. Por meio da criptografia de dados, garante a autenticidade e a integridade das transações realizadas.
+
+Certificado Digital OAB
+O Certificado Digital OAB é exclusivo para advogados regularmente inscritos na Ordem dos Advogados do Brasil. Por meio do documento eletrônico, o profissional pode dar andamento a diversos processos sem a necessidade de locomoção, por exemplo, visualizar autos e realizar o Peticionamento Eletrônico.
+
+Certificado para o CRM Digital
+A Cédula de Identidade Médica (CRM) é o documento obrigatório que atesta o registro do médico e a legalidade do exercício de sua função. Para acompanhar a digitalização da informação, o registro ganhou sua versão eletrônica, chamada CRM Digital ou e-CRM.
+
+Certificado Digital e-CNPJ
+O e-CNPJ Certisign é a versão eletrônica do CNPJ, que serve para emissão de nota fiscal eletrônica, transmissão de escrituração fiscal digital e obrigações acessórias, além de garantir a autenticidade e a integridade das transações de pessoas jurídicas no meio eletrônico.
+
+O e-CNPJ Certisign possibilita que a sua empresa faça procurações, Parcelamento eletrônico online, entrega das declarações como: DIRF, DOI, RAIS, utilizar o Conectividade Social, ter acesso ampliado no site da Receita Federal do Brasil (RFB) e a uma quantidade cada vez maior de serviços em instituições públicas e privadas — tudo pelo meio eletrônico.
+
+Certificado Digital de Atributo
+Um Certificado de Atributo é, em síntese, um documento eletrônico que identifica indivíduos nas empresas para a segregação de funções.
+
+Certificado Digital para ME-EPP
+É a versão eletrônica do CNPJ, criado especialmente para empresas de micro e pequeno porte.
+
+Certificado Digital NF-e
+O Certificado Digital emissor de notas fiscais é destinado especialmente para a emissão segura da nota fiscal eletrônica NF-e. De forma econômica e sustentável, elimina a necessidade de consumo de papel e, consequentemente, gastos com manuseio e armazenamento.
+
+Certificado Digital NFC-e
+A NFC-e ou Nota Fiscal de Consumidor Eletrônica é um documento de existência apenas digital, emitido e armazenado eletronicamente, com o intuito de documentar as operações comerciais de venda presencial ou venda para entrega em domicílio ao consumidor final (pessoa física ou jurídica) em operação interna e sem geração de crédito de ICMS ao adquirente. A NFC-e substituiu o tradicional cupom fiscal emitido em lojas, supermercados, drogarias e comércio varejista em geral na maioria dos estados brasileiros.
+
+Certificado para CT-e
+O CT-e surgiu a partir da necessidade da modernização do atual sistema de emissão dos documentos fiscais em papel que acobertam os serviços de transporte interestadual e intermunicipal para reduzir custos e simplificar as obrigações dos contribuintes.
+
+Dessa forma, há um acompanhamento em tempo real das operações comerciais pelo Fisco. O certificado CT-e Certisign é destinado a empresas que emitem documentos fiscais eletrônicos referentes ao transporte de cargas.
+
+E-mail seguro pessoal
+O E-mail Seguro Pessoal é um certificado para proteger as suas mensagens eletrônicas, garantindo também a autoria das mensagens, integridade do conteúdo, e sigilo das mensagens, incluindo os arquivos anexados. Já que permite o envio de mensagens criptografadas.
+
+Lembrando que o tipo de certificado a ser escolhido depende do sistema/aplicação onde ele será utilizado. Informe-se com o responsável pelo seu equipamento ou consulte a devida documentação para verificar se há alguma restrição para uso do tipo A1 ou A3.
+
+Como é feito o armazenamento das informações?
+
+
+Armazenado no computador
+Certificado Digital do tipo A1: é emitido diretamente no seu computador e ficará armazenado no seu navegador de internet ou em dispositivos móveis, protegido por senha e cifrado por software — sua validade máxima é de um ano.
+
+Este tipo de Certificado gera uma cópia de segurança na área de trabalho após a emissão. No arquivo constará o número do seu pedido. Para a sua segurança, transfira está cópia para um local seguro (na nuvem ou pen drive).
+
+Em mídias criptográficas Token ou Cartão
+Certificado Digital do tipo A3: é o certificado em que a geração e o armazenamento das chaves criptográficas são feitos em cartão inteligente ou Token, ambos com capacidade de geração de chaves e protegidos por senha e hardware criptográfico aprovado pela ICP-Brasil.
+
+As chaves criptográficas têm no mínimo 2048 bits e sua validade máxima para Certificados Digitais emitidos nessas mídias é de três anos.
+
+No servidor (Certificado Digital SSL)
+Os Certificados SSL, por sua vez, geralmente são armazenados em servidores e equipamentos que suportem o protocolo SSL/TLS, dentre eles: Apache, MicroSoft IIS, Exchange, Outlook Web Access, Office Communications Server, Tomcat, Glassfish, JBoss e servidores basados em JAVA, Painéis de controle WHM/Cpanel, Plesk, H-Sphere, Oracle Wallet Manager, Webservice, Lotus Domino, IBM HTTP Server, Citrix Netscaler Device, Iplanet, Zeus Web Server, F5 FirePass e BIG IP.
+
+HSM (Hardware Secure Module)
+É um Hardware que pode ser adquirido no formato de uma placa ou aplicado em um servidor lacrado, servindo ainda como armazenamento de diversos Certificados Digitais. Gera, guarda e protege chaves criptográficas.
+
+Certificado Digital na nuvem
+Como o próprio nome já diz, trata-se do Certificado Digital que você já conhece só que agora fica armazenado na nuvem da Certisign e pode ser acessado de qualquer dispositivo, de qualquer lugar do mundo, com total segurança e muito mais praticidade e a sua validade máxima é de até cinco anos.
+
+
+
+No dispositivo móvel
+Com as vantagens da mobilidade e da conveniência, elimina-se a necessidade de carregar cartões ou outras mídias. Outra facilidade é que ele não exige a instalação de drivers. Tudo isso sem colocar em risco a segurança do dono, já que a emissão e o armazenamento são feitos diretamente no celular ou tablet com o uso do mobileID. Atualmente, o tipo de Certificado que pode ser utilizado no celular é no formato A1 nas versões do sistema Google Android 4.4 ou superior e Apple IOS 8 ou superior.
+
+
+Ouça a última parte da nossa matéria clicando no player:
+
+
+Quando o Certificado Digital é inutilizado?
+
+
+Erro de senha
+Após 5 tentativas incorretas de digitação do PIN e do PUK para os Certificados Digitais emitidos em Cartão inteligente (após agosto de 2015 são 3 tentativas incorretas de digitação do PIN e do PUK para Certificados Digitais emitidos) até maio de 2014.
+
+Após 5 tentativas incorretas de digitação do PIN e do PUK para os Certificados Digitais emitidos em eToken Pro (Aladdin) – após agosto de 2015 são 6 tentativas incorretas de digitação do PIN e do PUK para Certificados Digitais emitidos – até maio de 2014. O dispositivo pode ser reinicializado e reutilizado, mas o Certificado será perdido.
+
+Após 5 tentativas incorretas de digitação do PIN e do PUK para os Certificados Digitais emitidos em Token GD Starsign (após agosto de 2015 são 3 tentativas incorretas de digitação do PIN e do PUK para Certificados Digitais emitidos) até maio de 2014. O dispositivo pode ser reinicializado e reutilizado, mas o Certificado será perdido.
+
+As tentativas são cumulativas, ou seja, a desconexão do dispositivo na entrada USB não zera o número de tentativas anteriores. Por determinação da legislação, a Certisign não possui cópia(s) da(s) sua(s) senha(s) e, portanto, não poderá recuperá-la(s) sob nenhuma hipótese.
+
+Perda ou Roubo
+Perda ou roubo do cartão inteligente, Token ou Celular (se não foi feita a cópia de segurança).
+
+Formatação
+Formatação do cartão inteligente ou Token, formatação do computador, caso não tenha sido gerada uma cópia de segurança do Certificado Digital tipo A1 ou exclusão da chave privada.
+
+Certificado Digital Expirado
+Quando a data de validade do seu Certificado expirar. Para não ser pego de surpresa, com o Certificado instalado em seu computador, Token, Cartão Inteligente, celular ou nuvem, verifique a Central de Testes da Certisign.
+
+Alteração de dados no Certificado Digital
+Quando ocorrer qualquer alteração de informação constante no Certificado Digital, veja alguns exemplos:
+
+o nome do titular de solteiro para casado ou vice-versa;
+alteração da Razão Social;
+houver constatação de informação incorreta no certificado.
+Em todos esses casos, será necessária a aquisição de um novo Certificado Digital.
+
+Quem pode vender?
+Os Certificados Digitais podem ser vendidos por uma autoridade certificadora oficial, credenciada na Infraestrutura de Chaves Públicas Brasileira, a ICP-Brasil.
+
+A ICP-Brasil é um conjunto de entidades prestadoras de serviços que autorizam determinadas Autoridades Certificadoras a emitir Certificados Digitais, mediante credenciamento e sob seu controle, para garantia, confiabilidade e validade jurídica das transações realizadas.
+
+Como se tornar um revendedor de Certificados Digitais?
+Devido às inúmeras possibilidades oferecidas pelas transações online, o mercado de Certificado Digital entrou em expansão. E para aqueles que têm interesse em aumentar a renda ou começar um novo negócio, é possível se tornar um revendedor e garantir bons retornos financeiros.
+
+Basta entrar em contato com uma empresa de referência no setor, que proporcionará estabilidade e segurança ao seu investimento. Se o seu interesse é se tornar um Local de Atendimento, entre em contato com o departamento comercial para obter todas as informações.
+
+Qual Certificado Digital comprar?
+Quem deseja obter o seu Certificado Digital deve, primeiramente, procurar uma empresa autorizada pelo governo, como a Certisign. Em seguida, é preciso escolher o tipo de certificado (e-CPF, e-CNPJ ou NF-e, por exemplo), o tipo de armazenamento (A1 e A3) e a validade do Certificado Digital.
+
+Resumindo, para emitir um Certificado Digital, são necessários os seguintes passos:
+
+entre em contato com a certificadora de sua preferência — como os preços variam, opte pela empresa que é referência no mercado;
+escolha o tipo de certificado que melhor se aplica à situação;
+siga o processo junto à certificadora.
+Dessa forma, antes de escolher qual certificado comprar, realize pesquisas no mercado, busque experiências positivas e avalie o cenário da sua empresa. Assim o processo ficará mais fácil!
+
+Em caso de dúvida, veja no site e escolha as respostas que melhor atendem as suas necessidades. Após finalizar a seleção, você será direcionado automaticamente ao Certificado que atenderá o seu objetivo.
+
+Formas de pagamento
+Em geral, as principais formas de pagamento disponíveis para o cliente são:
+
+cartão de crédito (Visa, Mastercard e Amex): pode ser parcelado em até 10x sem juros no cartão de crédito.
+boleto bancário: a opção é válida apenas para pagamento à vista. Após a emissão do boleto, você terá 3 (três) dias para efetuar o pagamento;
+pagamento com débito em conta Itaú;
+voucher: código fornecido pela empresa.
+Quais as curiosidades sobre o Certificado Digital?
+
+
+tem a mesma validade jurídica da assinatura feita de próprio punho, assegurada pela Medida Provisória 2.200-2.
+se as redes sociais fossem acessadas com Certificado, crimes virtuais, cyberbullying e fakes poderiam ser encontrados com maior facilidade;
+com Certificado Digital é possível assinar documentos, transferir a titularidade de veículos, ter a CNH Digital, abrir contas em banco e formalizar planos de saúde a distância;
+apenas em notas fiscais 76 bilhões de folhas de papel deixam de ser utilizadas, isso significa uma economia de 160 bilhões de litros de água e a preservação de 7,6 milhões de árvores;
+cerca de 90% da população da Estônia utiliza Certificado Digital como documento de identificação oficial a partir dos 15 anos;
+o Whatsapp já utiliza a criptografia para garantir a segurança das mensagens enviadas de seus usuários, mesma tecnologia utilizada pelo Certificado;
+com o Certificado os usuários têm acesso aos leilões da Policia e Receita Federal e não precisam ir até o local para dar o lance no produto desejado;
+permite a utilização da Declaração Pré-Preenchida do Imposto de Renda;
+tecnologia utilizada nos novos passaportes, que permite aos agentes da imigração verificarem se o documento apresentado é verdadeiro;
+algumas empresas certificadoras têm clube de vantagens, que oferece descontos exclusivos nas maiores lojas virtuais do Brasil;
+há mais de 8 milhões de Certificados Digitais válidos, com grande potencial de ampliação levando em consideração a população de todo o país e a crescente quantidade de serviços que exigem o uso de tecnologia.
+
+Criptografia
+
+Quando você ouve a palavra criptografia, deve imaginar algo que só técnicos ou geeks entendem. Na realidade, ela não é tão complicada assim.
+
+Criptografia é um sistema de algoritmos matemáticos que codificam dados do usuário para que só o destinatário possa ler. Por mais simples que possa parecer, a matemática e os passos adicionais podem se tornar difíceis para os principiantes. Mas, antes que você decida adiar isso em troca de outras maneiras para proteger suas comunicações online, alguns exemplos podem convencê-lo de que a criptografia é um dos melhores métodos para proteger sua privacidade, mesmo em momentos em que você acha que ela não conta.
+
+Telefonemas, e-mails, compras online, mídia social e navegação em geral são atividades online que não podemos dispensar em nossas vidas. Enquanto estamos constantemente procurando ou compartilhando informações online, nossos dados estão essencialmente armazenados em algum lugar. A maioria das pessoas não tem certeza onde é esse “algum lugar”, mas esses dados deveriam estar disponíveis só para o provedor de serviço de intermediação de sua conversa. Porém, ela pode estar visível para as empresas de telecomunicação transportando seus pacotes de Internet e, assim, suas comunicações supostamente privadas e seguras podem ser interceptadas.
+
+Como muitos casos provaram, dados de usuários e empresas estão cada vez mais sendo alvos de hackers e cibercriminosos, resultando em violações de dados e ataques direcionados. Só essa razão deveria servir como um alerta para os que não pensaram em proteger suas comunicações por meio de criptografia.
+
+O que é criptografia e como ela funciona?
+A criptografia reforça a segurança de uma mensagem ou arquivo embaralhando o conteúdo. Para criptografar uma mensagem, você também precisa da chave certa para decodificá-la. É o modo mais eficaz para ocultar comunicações através de informações em código, onde o remetente e o destinatário têm a chave para decifrar os dados. O conceito não é diferente de crianças que inventam palavras de código secreto e outras maneiras discretas para se comunicar, pelas quais só elas são capazes de entender a mensagem. Criptografia é como enviar de mensagens secretas entre grupos – se alguém tenta bisbilhotar sem as chaves certas, não conseguirá entender a mensagem.
+
+Existem dois métodos de criptografia: criptografia simétrica e assimétrica. Criptografia simétrica, também conhecida como criptografia de chave secreta, diz respeito ao remetente e o destinatário, sendo que a mesma chave é usada para criptografar e decodificar uma mensagem. A criptografia assimétrica, ou criptografia de chave pública usa o que é chamado de um ‘par de chaves’ – uma chave pública para criptografar a mensagem e uma chave privada para decodificá-la.
+
+Criptografando sua conexão
+Usar Wi-Fi para se conectar à Internet é prático, mas, em termos de segurança, não será difícil para um intruso interceptar qualquer conexão, podendo resultar em credenciais ou outros dados sensíveis de usuário roubados. É por isso que muitos sites usam um protocolo chamado HTTPS para criptografar dados que estão sendo enviados entre sites. Embora isso não seja necessariamente uma garantia absoluta, os riscos são reduzidos já que as informações transmitidas só podem ser decodificadas pelo site para o qual foram enviadas.
+
+Criptografando seus dados
+Quando se trata dos seus dados, o objetivo principal de criptografá-los – mesmo que você tenha criado um backup ou senhas seguras – é garantir sua privacidade, protege-los e assegurar a propriedade intelectual. Isso também é conhecido como criptografia de endpoint que, basicamente, adiciona uma camada extra de proteção para as informações confidenciais em seu PC e dispositivos, dados armazenados em mídia removível, como USB, CD, DVD ou pastas e arquivos específicos.
+
+Por que precisamos dela?
+Embora a criptografia não transmita segurança magicamente, ela ainda pode ser usada para proteger a identidade e a privacidade do usuário. Se alguma vez fomos vigiados, inadvertidamente ou não, podemos ocultar nossos dados usando sistemas de criptografia implementados adequadamente. De acordo com o criptógrafo e especialista em segurança e privacidade Bruce Schneier, “A criptografia funciona melhor se for ubíqua e automática. Ela deve estar ativada para tudo por padrão, não um recurso que você só liga quando está fazendo alguma coisa que considera que vale a pena proteger”.
+
+Programas Maliciosos
+
+Ferramentas maliciosas são programas de software maliciosos que foram desenvolvidos para automaticamente criar vírus, worms ou cavalos de Troia, conduzindo ataques de DoS em servidores remotos, invadindo outros computadores e muito mais.
+
+Como as ferramentas maliciosas podem afetar você
+Diferentemente dos vírus, worms e cavalos de Troia, o malware da subclasse de ferramentas maliciosas não representa uma ameaça direta ao computador onde está sendo executado, e a carga maliciosas do programa é enviada somente por ordem direta do usuário.
+
+A subclasse de ferramentas maliciosas é dividida em diferentes comportamentos, de acordo com a carga:
+
+Construtor
+Os programas construtores são feitos para criar novos vírus, worms e cavalos de Troia. Eles podem gerar o código-fonte do programa malicioso, módulos de objetos e/ou arquivos maliciosos.
+DoS
+São programas criados para conduzir ataques de negação de serviço (DoS) contra o computador da vítima. Os programas enviam diversas solicitações ao computador da vítima e, se a máquina não tiver recursos suficientes para processar todas elas, ocorrerá uma negação de serviço.
+Email-Flooder
+Remetentes de spam usam esses programas para inundar os canais de e-mails com mensagens sem sentido.
+Flooder
+Os programas Flooder muitas vezes são usados para inundar outros canais de rede, como IRC (Internet Relay Chat).
+IM-Flooder
+Muitas vezes, os remetentes de spam usam esses programas para inundar canais de mensagens instantâneas, como ICQ, MSN Messenger, AOL Instant Messenger, Yahoo Pager, Skype e outros, com mensagens sem sentido.
+SMS-Flooder
+Às vezes, programas SMS-Flooder são usados por remetentes de spam para inundar canais de mensagens de texto com mensagens inúteis.
+HackTool
+Esses programas podem ser usados para adicionar novos usuários à lista de visitantes do sistema autorizados e também para excluir informações dos logs do sistema a fim de ocultar a presença do usuário malicioso no sistema. Usuários maliciosos empregam programas HackTool ao configurar ataques em computadores locais ou remotos.
+Hoax
+Programas Hoax não danificam seu computador. Eles enviam mensagens informando que ocorreu, ou ocorrerá, um dano ou avisam sobre uma ameaça que não existe de verdade.
+Spoofer
+Programas Spoofer substituem o endereço da pessoa que enviou uma mensagem ou solicitação de rede. São usados para diversas finalidades, como evitar que o destinatário identifique o remetente de uma mensagem.
+VirTool
+Esses programas podem ser usados para modificar outros programas maliciosos e tentar evitar que uma solução antivírus detecte o software malicioso.
+Como se proteger de ferramentas maliciosas
+Instalar e manter um software antimalware nos dispositivos é essencial. A Kaspersky Lab desenvolveu tecnologias de segurança de Internet premiadas, além de oferecer produtos capazes de proteger os seguintes dispositivos:
+
+Computadores Windows
+Computadores Linux
+Macs da Apple
+Smartphones
+Tablets

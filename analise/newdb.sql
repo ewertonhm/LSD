@@ -26,7 +26,8 @@ CREATE TABLE aluno (
     endereco VARCHAR(120),
     telefone VARCHAR(16),
     usuario_id INT REFERENCES usuario(id),
-    curso_id INT REFERENCES curso(id)
+    curso_id INT REFERENCES curso(id),
+    versao INT
 );
 
 CREATE TABLE trabalho (

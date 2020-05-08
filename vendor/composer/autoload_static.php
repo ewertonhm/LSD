@@ -121,7 +121,33 @@ class ComposerStaticInit7e122ac82f3260413250439a5c9d0529
     );
 
     public static $classMap = array (
+        'Aluno' => __DIR__ . '/../..' . '/classes/Aluno.php',
+        'AlunoQuery' => __DIR__ . '/../..' . '/classes/AlunoQuery.php',
+        'Base\\Aluno' => __DIR__ . '/../..' . '/classes/Base/Aluno.php',
+        'Base\\AlunoQuery' => __DIR__ . '/../..' . '/classes/Base/AlunoQuery.php',
+        'Base\\Curso' => __DIR__ . '/../..' . '/classes/Base/Curso.php',
+        'Base\\CursoQuery' => __DIR__ . '/../..' . '/classes/Base/CursoQuery.php',
+        'Base\\Professor' => __DIR__ . '/../..' . '/classes/Base/Professor.php',
+        'Base\\ProfessorQuery' => __DIR__ . '/../..' . '/classes/Base/ProfessorQuery.php',
+        'Base\\Trabalho' => __DIR__ . '/../..' . '/classes/Base/Trabalho.php',
+        'Base\\TrabalhoQuery' => __DIR__ . '/../..' . '/classes/Base/TrabalhoQuery.php',
+        'Base\\Usuario' => __DIR__ . '/../..' . '/classes/Base/Usuario.php',
+        'Base\\UsuarioQuery' => __DIR__ . '/../..' . '/classes/Base/UsuarioQuery.php',
+        'Controllers\\Aluno' => __DIR__ . '/../..' . '/classes/Controllers/Aluno.php',
+        'Curso' => __DIR__ . '/../..' . '/classes/Curso.php',
+        'CursoQuery' => __DIR__ . '/../..' . '/classes/CursoQuery.php',
         'JsonException' => __DIR__ . '/..' . '/symfony/polyfill-php73/Resources/stubs/JsonException.php',
+        'Map\\AlunoTableMap' => __DIR__ . '/../..' . '/classes/Map/AlunoTableMap.php',
+        'Map\\CursoTableMap' => __DIR__ . '/../..' . '/classes/Map/CursoTableMap.php',
+        'Map\\ProfessorTableMap' => __DIR__ . '/../..' . '/classes/Map/ProfessorTableMap.php',
+        'Map\\TrabalhoTableMap' => __DIR__ . '/../..' . '/classes/Map/TrabalhoTableMap.php',
+        'Map\\UsuarioTableMap' => __DIR__ . '/../..' . '/classes/Map/UsuarioTableMap.php',
+        'Professor' => __DIR__ . '/../..' . '/classes/Professor.php',
+        'ProfessorQuery' => __DIR__ . '/../..' . '/classes/ProfessorQuery.php',
+        'Trabalho' => __DIR__ . '/../..' . '/classes/Trabalho.php',
+        'TrabalhoQuery' => __DIR__ . '/../..' . '/classes/TrabalhoQuery.php',
+        'Usuario' => __DIR__ . '/../..' . '/classes/Usuario.php',
+        'UsuarioQuery' => __DIR__ . '/../..' . '/classes/UsuarioQuery.php',
     );
 
     public static function getInitializer(ClassLoader $loader)

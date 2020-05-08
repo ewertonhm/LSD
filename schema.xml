@@ -7,6 +7,7 @@
     <column name="telefone" phpName="Telefone" type="VARCHAR" size="16"/>
     <column name="usuario_id" phpName="UsuarioId" type="INTEGER"/>
     <column name="curso_id" phpName="CursoId" type="INTEGER"/>
+    <column name="versao" phpName="Versao" type="INTEGER"/>
     <foreign-key foreignTable="curso" name="aluno_curso_id_fkey">
       <reference local="curso_id" foreign="id"/>
     </foreign-key>

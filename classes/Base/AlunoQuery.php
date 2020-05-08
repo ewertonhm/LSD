@@ -26,6 +26,7 @@ use Propel\Runtime\Exception\PropelException;
  * @method     ChildAlunoQuery orderByTelefone($order = Criteria::ASC) Order by the telefone column
  * @method     ChildAlunoQuery orderByUsuarioId($order = Criteria::ASC) Order by the usuario_id column
  * @method     ChildAlunoQuery orderByCursoId($order = Criteria::ASC) Order by the curso_id column
+ * @method     ChildAlunoQuery orderByVersao($order = Criteria::ASC) Order by the versao column
  *
  * @method     ChildAlunoQuery groupById() Group by the id column
  * @method     ChildAlunoQuery groupByNome() Group by the nome column
@@ -33,6 +34,7 @@ use Propel\Runtime\Exception\PropelException;
  * @method     ChildAlunoQuery groupByTelefone() Group by the telefone column
  * @method     ChildAlunoQuery groupByUsuarioId() Group by the usuario_id column
  * @method     ChildAlunoQuery groupByCursoId() Group by the curso_id column
+ * @method     ChildAlunoQuery groupByVersao() Group by the versao column
  *
  * @method     ChildAlunoQuery leftJoin($relation) Adds a LEFT JOIN clause to the query
  * @method     ChildAlunoQuery rightJoin($relation) Adds a RIGHT JOIN clause to the query
@@ -72,7 +74,8 @@ use Propel\Runtime\Exception\PropelException;
  * @method     ChildAluno findOneByEndereco(string $endereco) Return the first ChildAluno filtered by the endereco column
  * @method     ChildAluno findOneByTelefone(string $telefone) Return the first ChildAluno filtered by the telefone column
  * @method     ChildAluno findOneByUsuarioId(int $usuario_id) Return the first ChildAluno filtered by the usuario_id column
- * @method     ChildAluno findOneByCursoId(int $curso_id) Return the first ChildAluno filtered by the curso_id column *
+ * @method     ChildAluno findOneByCursoId(int $curso_id) Return the first ChildAluno filtered by the curso_id column
+ * @method     ChildAluno findOneByVersao(int $versao) Return the first ChildAluno filtered by the versao column *
 
  * @method     ChildAluno requirePk($key, ConnectionInterface $con = null) Return the ChildAluno by primary key and throws \Propel\Runtime\Exception\EntityNotFoundException when not found
  * @method     ChildAluno requireOne(ConnectionInterface $con = null) Return the first ChildAluno matching the query and throws \Propel\Runtime\Exception\EntityNotFoundException when not found
@@ -83,6 +86,7 @@ use Propel\Runtime\Exception\PropelException;
  * @method     ChildAluno requireOneByTelefone(string $telefone) Return the first ChildAluno filtered by the telefone column and throws \Propel\Runtime\Exception\EntityNotFoundException when not found
  * @method     ChildAluno requireOneByUsuarioId(int $usuario_id) Return the first ChildAluno filtered by the usuario_id column and throws \Propel\Runtime\Exception\EntityNotFoundException when not found
  * @method     ChildAluno requireOneByCursoId(int $curso_id) Return the first ChildAluno filtered by the curso_id column and throws \Propel\Runtime\Exception\EntityNotFoundException when not found
+ * @method     ChildAluno requireOneByVersao(int $versao) Return the first ChildAluno filtered by the versao column and throws \Propel\Runtime\Exception\EntityNotFoundException when not found
  *
  * @method     ChildAluno[]|ObjectCollection find(ConnectionInterface $con = null) Return ChildAluno objects based on current ModelCriteria
  * @method     ChildAluno[]|ObjectCollection findById(int $id) Return ChildAluno objects filtered by the id column
@@ -91,6 +95,7 @@ use Propel\Runtime\Exception\PropelException;
  * @method     ChildAluno[]|ObjectCollection findByTelefone(string $telefone) Return ChildAluno objects filtered by the telefone column
  * @method     ChildAluno[]|ObjectCollection findByUsuarioId(int $usuario_id) Return ChildAluno objects filtered by the usuario_id column
  * @method     ChildAluno[]|ObjectCollection findByCursoId(int $curso_id) Return ChildAluno objects filtered by the curso_id column
+ * @method     ChildAluno[]|ObjectCollection findByVersao(int $versao) Return ChildAluno objects filtered by the versao column
  * @method     ChildAluno[]|\Propel\Runtime\Util\PropelModelPager paginate($page = 1, $maxPerPage = 10, ConnectionInterface $con = null) Issue a SELECT query based on the current ModelCriteria and uses a page and a maximum number of results per page to compute an offset and a limit
  *
  */
@@ -189,7 +194,7 @@ abstract class AlunoQuery extends ModelCriteria
      */
     protected function findPkSimple($key, ConnectionInterface $con)
     {
-        $sql = 'SELECT id, nome, endereco, telefone, usuario_id, curso_id FROM aluno WHERE id = :p0';
+        $sql = 'SELECT id, nome, endereco, telefone, usuario_id, curso_id, versao FROM aluno WHERE id = :p0';
         try {
             $stmt = $con->prepare($sql);
             $stmt->bindValue(':p0', $key, PDO::PARAM_INT);
@@ -479,6 +484,47 @@ abstract class AlunoQuery extends ModelCriteria
         }
 
         return $this->addUsingAlias(AlunoTableMap::COL_CURSO_ID, $cursoId, $comparison);
+    }
+
+    /**
+     * Filter the query on the versao column
+     *
+     * Example usage:
+     * <code>
+     * $query->filterByVersao(1234); // WHERE versao = 1234
+     * $query->filterByVersao(array(12, 34)); // WHERE versao IN (12, 34)
+     * $query->filterByVersao(array('min' => 12)); // WHERE versao > 12
+     * </code>
+     *
+     * @param     mixed $versao The value to use as filter.
+     *              Use scalar values for equality.
+     *              Use array values for in_array() equivalent.
+     *              Use associative array('min' => $minValue, 'max' => $maxValue) for intervals.
+     * @param     string $comparison Operator to use for the column comparison, defaults to Criteria::EQUAL
+     *
+     * @return $this|ChildAlunoQuery The current query, for fluid interface
+     */
+    public function filterByVersao($versao = null, $comparison = null)
+    {
+        if (is_array($versao)) {
+            $useMinMax = false;
+            if (isset($versao['min'])) {
+                $this->addUsingAlias(AlunoTableMap::COL_VERSAO, $versao['min'], Criteria::GREATER_EQUAL);
+                $useMinMax = true;
+            }
+            if (isset($versao['max'])) {
+                $this->addUsingAlias(AlunoTableMap::COL_VERSAO, $versao['max'], Criteria::LESS_EQUAL);
+                $useMinMax = true;
+            }
+            if ($useMinMax) {
+                return $this;
+            }
+            if (null === $comparison) {
+                $comparison = Criteria::IN;
+            }
+        }
+
+        return $this->addUsingAlias(AlunoTableMap::COL_VERSAO, $versao, $comparison);
     }
 
     /**

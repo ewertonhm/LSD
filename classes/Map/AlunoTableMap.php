@@ -58,7 +58,7 @@ class AlunoTableMap extends TableMap
     /**
      * The total number of columns
      */
-    const NUM_COLUMNS = 6;
+    const NUM_COLUMNS = 7;
 
     /**
      * The number of lazy-loaded columns
@@ -68,7 +68,7 @@ class AlunoTableMap extends TableMap
     /**
      * The number of columns to hydrate (NUM_COLUMNS - NUM_LAZY_LOAD_COLUMNS)
      */
-    const NUM_HYDRATE_COLUMNS = 6;
+    const NUM_HYDRATE_COLUMNS = 7;
 
     /**
      * the column name for the id field
@@ -101,6 +101,11 @@ class AlunoTableMap extends TableMap
     const COL_CURSO_ID = 'aluno.curso_id';
 
     /**
+     * the column name for the versao field
+     */
+    const COL_VERSAO = 'aluno.versao';
+
+    /**
      * The default string format for model objects of the related table
      */
     const DEFAULT_STRING_FORMAT = 'YAML';
@@ -112,11 +117,11 @@ class AlunoTableMap extends TableMap
      * e.g. self::$fieldNames[self::TYPE_PHPNAME][0] = 'Id'
      */
     protected static $fieldNames = array (
-        self::TYPE_PHPNAME       => array('Id', 'Nome', 'Endereco', 'Telefone', 'UsuarioId', 'CursoId', ),
-        self::TYPE_CAMELNAME     => array('id', 'nome', 'endereco', 'telefone', 'usuarioId', 'cursoId', ),
-        self::TYPE_COLNAME       => array(AlunoTableMap::COL_ID, AlunoTableMap::COL_NOME, AlunoTableMap::COL_ENDERECO, AlunoTableMap::COL_TELEFONE, AlunoTableMap::COL_USUARIO_ID, AlunoTableMap::COL_CURSO_ID, ),
-        self::TYPE_FIELDNAME     => array('id', 'nome', 'endereco', 'telefone', 'usuario_id', 'curso_id', ),
-        self::TYPE_NUM           => array(0, 1, 2, 3, 4, 5, )
+        self::TYPE_PHPNAME       => array('Id', 'Nome', 'Endereco', 'Telefone', 'UsuarioId', 'CursoId', 'Versao', ),
+        self::TYPE_CAMELNAME     => array('id', 'nome', 'endereco', 'telefone', 'usuarioId', 'cursoId', 'versao', ),
+        self::TYPE_COLNAME       => array(AlunoTableMap::COL_ID, AlunoTableMap::COL_NOME, AlunoTableMap::COL_ENDERECO, AlunoTableMap::COL_TELEFONE, AlunoTableMap::COL_USUARIO_ID, AlunoTableMap::COL_CURSO_ID, AlunoTableMap::COL_VERSAO, ),
+        self::TYPE_FIELDNAME     => array('id', 'nome', 'endereco', 'telefone', 'usuario_id', 'curso_id', 'versao', ),
+        self::TYPE_NUM           => array(0, 1, 2, 3, 4, 5, 6, )
     );
 
     /**
@@ -126,11 +131,11 @@ class AlunoTableMap extends TableMap
      * e.g. self::$fieldKeys[self::TYPE_PHPNAME]['Id'] = 0
      */
     protected static $fieldKeys = array (
-        self::TYPE_PHPNAME       => array('Id' => 0, 'Nome' => 1, 'Endereco' => 2, 'Telefone' => 3, 'UsuarioId' => 4, 'CursoId' => 5, ),
-        self::TYPE_CAMELNAME     => array('id' => 0, 'nome' => 1, 'endereco' => 2, 'telefone' => 3, 'usuarioId' => 4, 'cursoId' => 5, ),
-        self::TYPE_COLNAME       => array(AlunoTableMap::COL_ID => 0, AlunoTableMap::COL_NOME => 1, AlunoTableMap::COL_ENDERECO => 2, AlunoTableMap::COL_TELEFONE => 3, AlunoTableMap::COL_USUARIO_ID => 4, AlunoTableMap::COL_CURSO_ID => 5, ),
-        self::TYPE_FIELDNAME     => array('id' => 0, 'nome' => 1, 'endereco' => 2, 'telefone' => 3, 'usuario_id' => 4, 'curso_id' => 5, ),
-        self::TYPE_NUM           => array(0, 1, 2, 3, 4, 5, )
+        self::TYPE_PHPNAME       => array('Id' => 0, 'Nome' => 1, 'Endereco' => 2, 'Telefone' => 3, 'UsuarioId' => 4, 'CursoId' => 5, 'Versao' => 6, ),
+        self::TYPE_CAMELNAME     => array('id' => 0, 'nome' => 1, 'endereco' => 2, 'telefone' => 3, 'usuarioId' => 4, 'cursoId' => 5, 'versao' => 6, ),
+        self::TYPE_COLNAME       => array(AlunoTableMap::COL_ID => 0, AlunoTableMap::COL_NOME => 1, AlunoTableMap::COL_ENDERECO => 2, AlunoTableMap::COL_TELEFONE => 3, AlunoTableMap::COL_USUARIO_ID => 4, AlunoTableMap::COL_CURSO_ID => 5, AlunoTableMap::COL_VERSAO => 6, ),
+        self::TYPE_FIELDNAME     => array('id' => 0, 'nome' => 1, 'endereco' => 2, 'telefone' => 3, 'usuario_id' => 4, 'curso_id' => 5, 'versao' => 6, ),
+        self::TYPE_NUM           => array(0, 1, 2, 3, 4, 5, 6, )
     );
 
     /**
@@ -157,6 +162,7 @@ class AlunoTableMap extends TableMap
         $this->addColumn('telefone', 'Telefone', 'VARCHAR', false, 16, null);
         $this->addForeignKey('usuario_id', 'UsuarioId', 'INTEGER', 'usuario', 'id', false, null, null);
         $this->addForeignKey('curso_id', 'CursoId', 'INTEGER', 'curso', 'id', false, null, null);
+        $this->addColumn('versao', 'Versao', 'INTEGER', false, null, null);
     } // initialize()
 
     /**
@@ -327,6 +333,7 @@ class AlunoTableMap extends TableMap
             $criteria->addSelectColumn(AlunoTableMap::COL_TELEFONE);
             $criteria->addSelectColumn(AlunoTableMap::COL_USUARIO_ID);
             $criteria->addSelectColumn(AlunoTableMap::COL_CURSO_ID);
+            $criteria->addSelectColumn(AlunoTableMap::COL_VERSAO);
         } else {
             $criteria->addSelectColumn($alias . '.id');
             $criteria->addSelectColumn($alias . '.nome');
@@ -334,6 +341,7 @@ class AlunoTableMap extends TableMap
             $criteria->addSelectColumn($alias . '.telefone');
             $criteria->addSelectColumn($alias . '.usuario_id');
             $criteria->addSelectColumn($alias . '.curso_id');
+            $criteria->addSelectColumn($alias . '.versao');
         }
     }
 

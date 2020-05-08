@@ -15,6 +15,7 @@ CREATE TABLE "aluno"
     "telefone" VARCHAR(16),
     "usuario_id" INTEGER,
     "curso_id" INTEGER,
+    "versao" INTEGER,
     PRIMARY KEY ("id")
 );
 
