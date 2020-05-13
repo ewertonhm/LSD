@@ -1,6 +1,5 @@
 CREATE TABLE usuario (
     id SERIAL PRIMARY KEY,
-    login VARCHAR(45) NOT NULL,
     senha VARCHAR(32) NOT NULL,
     email VARCHAR(45) NOT NULL,
     admin INT

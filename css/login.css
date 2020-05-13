@@ -1,0 +1,38 @@
+/* Made with love by Mutiullah Samim*/
+
+@import url('https://fonts.googleapis.com/css?family=Numans');
+
+html,body{
+background-image: url('https://www.uniguacu.edu.br/content/uploads/2019/04/Unigua%C3%A7u-Centro-Universit%C3%A1rio-Vale-do-Igua%C3%A7u.jpg');
+background-size: cover;
+background-repeat: no-repeat;
+height: 95%;
+font-family: 'Numans', sans-serif;
+}
+
+.container{
+height: 100%;
+align-content: center;
+}
+
+.card{
+height: 270px;
+margin-top: auto;
+margin-bottom: auto;
+width: 400px;
+background-color: rgba(255, 255, 255, 0.5) !important;
+}
+
+.input-group-prepend span{
+width: 50px;
+color: white;
+border:0 !important;
+}
+
+input:focus{
+outline: 0 0 0 0  !important;
+box-shadow: 0 0 0 0 !important;
+
+}
+
+
